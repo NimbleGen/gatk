@@ -19,7 +19,7 @@
         <module>gatk-utils</module>
         <module>gatk-engine</module>
         <module>gatk-tools-public</module>
-        <module>external-example</module>
+        <module>external/nimblegen</module>
         <!-- queue optionally enabled as profiles -->
     </modules>
 
