@@ -171,6 +171,7 @@ public class CommandLineGATK extends CommandLineExecutable {
         header.add(String.format("The Genome Analysis Toolkit (GATK) v%s, Compiled %s",getVersionNumber(), getBuildTime()));
         header.add("Copyright (c) 2010 The Broad Institute");
         header.add("For support and documentation go to " + HelpConstants.BASE_GATK_URL);
+        header.add("Compilation of public (non-protected) code from Roche NimbleGen fork. No changes in functionality.");
         return header;
     }
 
