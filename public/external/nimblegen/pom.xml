@@ -6,12 +6,12 @@
     <!-- Properties for your assembly -->
     <groupId>com.roche.nimblegen</groupId>
     <artifactId>nimblegen</artifactId>
-    <version>3.4.1</version>
+    <version>3.4</version>
     <packaging>jar</packaging>
     <name>External: GATK NimbleGen Public</name>
 
     <properties>
-        <nimblegen.finalname>gatk-rng-public.${project.version}.jar</nimblegen.finalname>
+        <nimblegen.finalname>GenomeAnalysisTK.jar</nimblegen.finalname>
 
         <gatk.version>3.4</gatk.version>
         <!--
@@ -118,6 +118,13 @@
                                         <include>**</include>
                                     </includes>
                                 </filter>
+
+                                <filter>
+                                    <artifact>org.broadinstitute.gatk:gatk-engine</artifact>
+                                    <includes>
+                                        <include>**</include>
+                                    </includes>
+                                </filter>
                             </filters>
 
                             <!-- Stop shade from trying to unzip these indirect dependencies -->
@@ -141,7 +148,6 @@
                                     <resource>GATKText.properties</resource>
                                 </transformer>
                             </transformers>
-
 
                         </configuration>
                     </execution>
